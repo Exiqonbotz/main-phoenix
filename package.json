@@ -9,22 +9,12 @@
     },
     "scripts": {
         "start": "node starter.cjs",
-        "test": "yarn node test.cjs",
+        "test": " node test.cjs",
         "build": "docker build -t phoenix-bot ."
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/7ucg/Phoenix-MD.git"
-    },
-    "keywords": [
-        "md-bot"
-    ],
     "author": "Exiqon&Baron",
     "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/7ucg/Phoenix-MD/issues"
-    },
-    "homepage": "https://github.com/7ucg/Phoenix-MD#readme",
+
     "devDependencies": {
         "@adiwajshing/keyed-db": "^0.2.4",
         "@hapi/boom": "^10.0.1",

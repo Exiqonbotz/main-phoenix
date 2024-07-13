@@ -949,6 +949,7 @@ Verordnung: 27. November 2022 📅
 
 
 
+    
     if (m.message) {
       addBalance(m.sender, randomNomor(574), balance);
 
@@ -958,15 +959,17 @@ Verordnung: 27. November 2022 📅
       const inChat = m.chat;
 
       // Erstelle eine strukturierte und farbige Konsolenausgabe
-      if (isCmd) {
-        const commandLog = m.message.conversation.toLowerCase().split(' ')[0] || ''
-        console.log(
-          chalk.white(chalk.bgBlack(`[ BEFEHL - ${commandLog}]`)), 
-          chalk.magenta(" => From:") + " " + chalk.blue(chatName) + " (" + chalk.yellow(m.sender) + ")" + 
-          chalk.magenta(" => In:") + " " + chalk.red(from) + " (" + chalk.green(inChat) + ")"
-        );
-      }
-        }
+      console.log(
+        chalk.white(chalk.bgBlack("[ MESSAGE ]")),
+        "\n" +
+        chalk.magenta("=> From:") + " " +
+        chalk.blue(chatName) + " (" + chalk.yellow(m.sender) + ")" + "\n" +
+        chalk.magenta("=> Type:") + " " +
+        chalk.cyan(messageType) + "\n" +
+        chalk.magenta("=> In:") + " " +
+        chalk.red(from) + " (" + chalk.green(inChat) + ")"
+      );
+    }
 
 
 
@@ -974,6 +977,7 @@ Verordnung: 27. November 2022 📅
       pendaftar.push(m.sender);
       fs.writeFileSync("./storage/user/user.json", JSON.stringify(pendaftar));
     }
+
 
 
 

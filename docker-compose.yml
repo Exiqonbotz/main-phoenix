@@ -1,8 +1,0 @@
-services:
-
-  bot-096:
-    ports:
-      - 9000:9000
-    build:
-      context: .
-      dockerfile: Dockerfile
