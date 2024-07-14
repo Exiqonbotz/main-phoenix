@@ -22,11 +22,11 @@ global.prefix = ["/"];                                    //Default prefix here.
 prefix = ["/"];  
 
 //
-global.Owner = ["436508326391111","491741711168","4917417111683","436649151729"];  
+global.Owner = ["436508326391111","491741711168","4917417111683","436649151729","436506608127996"];  
 global.Ownerr = ["+436508326391111\n+491741711168\n+4917417111683"];      
 global.botNumberr = ["436506608127100","4917417111685"];  
-global.OwnerNumber = ["436508326391111","491741711168","4917417111683","436649151729"]; 
-global.sup = [ "436508326391111","4915901533317","4915119405921","4915678427112","491741711168","4915678382282"];   //If you want singal number so global.Owner = ['4365022989060'] Change into your number.
+global.OwnerNumber = ["436508326391111","491741711168","4917417111683","436649151729","436506608127996"]; 
+global.sup = [ "436508326391111","4915901533317","4915119405921","4915678427112","491741711168","4915678382282","436649151729","436506608127996"];   //If you want singal number so global.Owner = ['4365022989060'] Change into your number.
 global.ownertag = ["491741711168"];
 global.OwnerName = "Exiqon";
 global.BotName = "Phoenix-BOT";
@@ -37,7 +37,7 @@ global.SupportGroupLink = "https://chat.whatsapp.com/GXJA9IomUhaHyofAT4PlJQ";
 global.link = "https://chat.whatsapp.com/DGNMYS80qRG5nFyaROZ3fa"
 global.antispam = true
 //
-global.sessionName = "phoenix_v1";                          //Do not change.
+global.sessionName = "bot_api";                          //Do not change.
 
 
 //
