@@ -267,13 +267,18 @@ Phoenix.ev.on('group-participants.update', async (anu) => {
   Phoenix.decodeJid = (jid) => {
     if (!jid) return jid;
     if (/:\d+@/gi.test(jid)) {
-      let decode = jidDecode(jid) || {};
-      return (
-        (decode.user && decode.server && decode.user + "@" + decode.server) ||
-        jid
-      );
-    } else return jid;
+      let decode = jidDecode(jid);
+      if (decode && decode.user && decode.server) {
+        return decode.user + "@" + decode.server;
+      } else {
+        console.error("jidDecode returned undefined or incomplete for jid:", jid);
+        return jid;
+      }
+    } else {
+      return jid;
+    }
   };
+  
 
   Phoenix.ev.on("contacts.update", (update) => {
     for (let contact of update) {
