@@ -549,7 +549,7 @@ Verordnung: 27. November 2022 📅
     ///////////////////////////
 
     //console.log('Nachricht', m);
- //   console.log('Prefix:', isCmd);
+    //console.log('Prefix:', isCmd);
 
     ////////////////
 
@@ -959,17 +959,19 @@ Verordnung: 27. November 2022 📅
       const inChat = m.chat;
 
       // Erstelle eine strukturierte und farbige Konsolenausgabe
-      console.log(
-        chalk.white(chalk.bgBlack("[ MESSAGE ]")),
-        "\n" +
-        chalk.magenta("=> From:") + " " +
-        chalk.blue(chatName) + " (" + chalk.yellow(m.sender) + ")" + "\n" +
-        chalk.magenta("=> Type:") + " " +
-        chalk.cyan(messageType) + "\n" +
-        chalk.magenta("=> In:") + " " +
-        chalk.red(from) + " (" + chalk.green(inChat) + ")"
-      );
-    }
+      if (isCmd) {
+        console.log(
+          chalk.white(chalk.bgBlack("[ COMMAND ]")),
+          "\n" +
+          chalk.magenta("=> From:") + " " +
+          chalk.blue(chatName) + " (" + chalk.yellow(m.sender) + ")" + "\n" +
+          chalk.magenta("=> Type:") + " " +
+          chalk.cyan(messageType) + "\n" +
+          chalk.magenta("=> In:") + " " +
+          chalk.red(from) + " (" + chalk.green(inChat) + ")"
+        );
+      }
+    }      
 
 
 
