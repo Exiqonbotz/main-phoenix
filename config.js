@@ -37,7 +37,7 @@ global.SupportGroupLink = "https://chat.whatsapp.com/GXJA9IomUhaHyofAT4PlJQ";
 global.link = "https://chat.whatsapp.com/DGNMYS80qRG5nFyaROZ3fa"
 global.antispam = true
 //
-global.sessionName = "bot_api";                          //Do not change.
+global.sessionName = "phoenix_v1";                          //Do not change.
 
 
 //
