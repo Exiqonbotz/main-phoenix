@@ -4832,6 +4832,7 @@ _Click the button below to download_`
 
       case 'ytvd': case 'video': case 'ytvideo': case 'ytmp4': {
         if (!isRegistered) return await reply(mess.nonreg, id);
+        if (!isBotAdmins) return await Phoenix.sendText(from, 'Aus technischen Gründen ist dieser Befehl derzeit nicht möglich')
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
 
@@ -4851,6 +4852,7 @@ _Click the button below to download_`
 
       case 'ytmp3': {
         if (!isRegistered) return await reply(mess.nonreg, id);
+        if (!isBotAdmins) return await Phoenix.sendText(from, 'Aus technischen Gründen ist dieser Befehl derzeit nicht möglich')
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
 
@@ -4864,6 +4866,7 @@ _Click the button below to download_`
 
       case 'ytvd2': case 'ytmp4': {
         if (!isRegistered) return await reply(mess.nonreg, id);
+        if (!isBotAdmins) return await Phoenix.sendText(from, 'Aus technischen Gründen ist dieser Befehl derzeit nicht möglich')
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         const YT = require('./lib/ytdl-core')
