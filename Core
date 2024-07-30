@@ -66,7 +66,7 @@ const modapk = require("tod-api");
 const { hentai } = require('./lib/scraper2.js');
 const { instadl } = require('./lib/instadl');
 const { antispam } = require('./antispam.js')
-const ty = eco.connect('mongodb+srv://baron:baron@baron.ghhtqgv.mongodb.net/?retryWrites=true&w=majority&appName=baron');
+//const ty = eco.connect('mongodb+srv://baron:baron@baron.ghhtqgv.mongodb.net/?retryWrites=true&w=majority&appName=baron');
 const { limitAdd, getLimit, giveLimit, kurangBalance, getBalance, isGame, gameAdd, givegame, cekGLimit } = require('./lib/limit.js');
 const githubstalk = require('./lib/githubstalk');
 let { covid } = require('./lib/covid.js');
@@ -1990,30 +1990,31 @@ case 'autokick':
 
         m.reply(`  *━━━〈 𝗣𝗵𝗼𝗲𝗻𝗶𝘅 Ƀøŧ Team🌃  〉━━━*
 
-*High Team* :
+*Owner* :
 -👑 *Ɛ×ͥΐզͣօͫή* (Inhaber)
+-💎 *𝔱𝔮𝔩𝔶𝔷𝔵𝔞*  (Stv.Inhaber)
 
 *Teamleitung* :
--👀 *Kagenoo* (Leitung)
+-💎 *Kagenoo* (Leitung)
 -👀 *⸸ℑꈤᥴꪊ𝕭ꪊᦓ⸸* (Stv.Leitung)
 
 *Tech-Team* :
 -💎 *𝔱𝔮𝔩𝔶𝔷𝔵𝔞* (Leitung)
--🕹️ *Sebastian* (NishiOwner) 
+-🕹️ *Sebastian* (NishiOwner)
 -🕹️ *(Name)*
 
 *Mod-Team* :
--💎 *Kagenoo* (Leitung)
--👮🏻‍♂ *Zyͥxoͣ-ͫ1119* (Mod)
+-💎 *ᵀʳⁱˡˡF̷i̷n̷g̷a̷z̷* (Leitung)
+-👮🏻‍♂ *Insane Blade* (Mod)
 -👮🏻‍♂ *Der Pate*  (Mod)
--👮🏻‍♂ *Ryze* (Mod)
+-👮🏻‍♂ ** (Mod)
 
 *Support-Team* :
--💎 *Chris* (Leitung)
--👷🏻‍♂️ *Medi* (Supporter)
+-💎 *Medi* (Leitung)
 -👷🏻‍♂️ *Domi* (Supporter)
--👷🏻‍♂️ *Nexus* (Supporter)
+-👷🏻‍♂️ *𝔅𝔦𝔰𝔪𝔞𝔯𝔠𝔨* (Supporter)
 -👷🏻‍♂️ *𝚂щͥ𝙴̨ͣẑͫᏃẏ* (Supporter)
+-👷🏻‍♂️ *𓅛⃟𑆴҉𝚌ᷱ𝚘ͣ𝚣ᷦ𝚣ᷦ𝚢ͣꪻ𞋭𞋭* (Supporter)
 
 \n* Um eine Supportanfrage zu stellen,* *benutzt bitte /support gefolgt von eurem Anliegen.*
 
@@ -3729,7 +3730,7 @@ Group Settings Menu`
         let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
         let userrs = m.mentionedJid[0] ? m.mentionedJid[0].replace('@s.whatsapp.net', '') : m.quoted ? m.quoted.sender.replace('@s.whatsapp.net', '') : text.replace(/[^0-9]/g, '');
 
-        await Phoenix.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(`+${userrs} ist jetzt ein Admin`)).catch((err) => reply('Error!'))
+        await Phoenix.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(`+${userrs} ist jetzt ein Admin!`)).catch((err) => reply('Error!'))
       }
         break;
 
@@ -3743,7 +3744,7 @@ Group Settings Menu`
         if (!isAdmins && !isCreator) return reply(mess.useradmin)
         let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
         let userrs = m.mentionedJid[0] ? m.mentionedJid[0].replace('@s.whatsapp.net', '') : m.quoted ? m.quoted.sender.replace('@s.whatsapp.net', '') : text.replace(/[^0-9]/g, '');
-        await Phoenix.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => reply(`+${userrs} ist kein Admin mehr`)).catch((err) => reply('Error!'))
+        await Phoenix.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => reply(`+${userrs} ist kein Admin mehr!`)).catch((err) => reply('Error!'))
       }
         break;
 
@@ -5408,7 +5409,7 @@ _Click the button below to download_`
       case 'kill': case 'pat': case 'lick': case 'kiss': case 'bite':
       case 'bully': case 'bonk': case 'poke': case 'slap':
       case 'happy':
-      case 'cuddle': case 'kick': {
+      case 'cuddle': case 'tritt': {
 
         if (!isRegistered) return await reply(mess.nonreg, id);
         if (isBan) return reply(mess.banned);
